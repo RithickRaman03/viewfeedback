@@ -1,0 +1,262 @@
+.topbar{
+  width: 100%;
+  background-color:#2BB8E6;
+  height: 13vh;;
+  display: flex;
+  overflow: auto;
+}
+.logo{
+  flex:2;
+  float:left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logophoto{
+  width:100%;
+  height: 50%;
+}
+.search{
+  flex: 7;
+  float:left;
+  display: grid;
+  place-items: center;
+}
+.inputbox{
+  width: 80%;
+}
+.gap{
+  flex:0.3;
+}
+.notification{
+  flex:1;
+  float:left;
+  display: flex;
+  align-items: center;
+  justify-content:right;
+}
+.profile{
+  flex: 1;
+  float:left;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+
+}
+.icon1{
+  font-size: 50px;
+  color: white;
+}
+.img{
+  border-radius: 50px;
+  max-height: 50px;
+  max-width: 50px;
+}
+@media screen and (max-width: 700px) {
+  .logo{
+    flex:6;
+  }
+  .logophoto{
+    width: 100%;
+    height: 50%;
+  }
+  .profile{
+    display: grid;
+    place-items: center;
+  }
+  /* .search {
+    width: 100%;
+  }
+  .notification{
+    width: 50%;
+    float: left;
+  }
+  .profile{
+    width: 50%;
+  } */
+}
+
+
+/* navbar */
+
+/* ROOT CSS VARIABLES */
+:root {
+  --color-white: #ffffff;
+  --color-light-blue: #f2fbfe;
+  --color-blue: #2bb8e6;
+  --color-gray-light: #f2f2f2;
+  --color-gray-dark: #606060;
+  --color-dark: pink;
+  --color-primary: #e6592b;
+  --card-padding: 1.6rem;
+  --padding-1: 1rem;
+  --padding-2: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+main {
+  display: flex;
+  grid-template-columns: 16rem auto;
+  max-width: 100%;
+  text-decoration: none !important;
+}
+
+/* main section.middle{
+	background: blueviolet;
+} */
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background: var(--color-white);
+  width: 260px;
+}
+
+main aside button#close-btn {
+  display: none;
+}
+
+.google-icon {
+  font-size: 35px !important;
+  display: inline-block !important;
+}
+
+main aside .sidebar a {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  gap: 1.2rem;
+  height: 4.2rem;
+  color: var(--color-gray-dark);
+  position: relative;
+  background: var(--color-white);
+}
+
+main aside .sidebar a span {
+  font-size: 1.7rem;
+  margin-left: 3rem;
+  transition: all 300ms ease;
+}
+
+main aside .sidebar a.active {
+  background: var(--color-light-blue);
+  border-left: 7.5px solid var(--color-gray-dark) !important;
+}
+/* main aside .sidebar a.active :after {
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  background: var(--color-gray-dark) !important;
+} */
+
+main aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+
+main aside .sidebar a:hover span {
+  margin-left: 2rem;
+}
+
+main aside .sidebar h4 {
+  font-weight: bold;
+}
+
+
+/* viewfeedback */
+.fullcontent{
+  display: flex;
+  flex-direction:row;
+}
+.overall{
+ 
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+}
+.content{
+  display: flex;
+  background-color: rgb(207, 234, 244);
+}
+.viewtable {
+  margin-top: 100px;
+  background-color: #f2f2f2;
+  border-collapse: collapse;
+}
+
+
+
+.viewtable th, .viewtable td {
+  text-align: center;
+  padding: 8px;
+  background-color:white; 
+}
+
+.viewtable th{
+  border-bottom: 2px solid black;
+}
+.viewtable td {
+  height: 120px;
+  width: fit-content;
+}
+
+
+
+
+#svgContainer {
+ 
+  align-items: center;}
+  #starbutton{
+    background-color: transparent;
+  }
+
+  .overall{
+    display: flex;
+    width: 100%; 
+    align-items:center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+ 
+  .displaycontent{
+    flex-direction:column;
+   align-items:center;
+   margin:1px solid black;
+   
+  }
+  .items{
+    margin-top: 100px;
+  
+  }
+  .content{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+  }
+  .displayedcontent{
+    
+    width: 99%;
+    font-size:16px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 8px rgb(242, 241, 241), 0 6px 20px 0 rgb(242, 241, 241); 
+     background-color:white;
+
+  }
+  .question{
+ margin-left: 10px;
+ margin-right: 10px;
+ font-size: 12px;
+ width: 50px;
+  }
+ 
