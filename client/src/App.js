@@ -51,11 +51,12 @@ const App = () => {
   return (
     <div>
       <Topbar />
-      <div className="fullcontent">
+      <div className="viewfeed-fullcontent">
         <Navbar />
 
-        <div className="content">
-          <div className="overall">
+        <div className="viewfeed-content">
+          <p1>FEEDBACK</p1>
+          <div className="viewfeed-overall">
             <h1>
               {" "}
               Overall Rating:
@@ -85,13 +86,13 @@ const App = () => {
             <br />
           </div>
 
-          <table className="viewtable">
+          <table className="viewfeed-viewtable">
             <thead>
               <tr>
                 <th>DOCUMENT</th>
                 <th>REVIEWER</th>
                 <th>FEEDBACK</th>
-                <th>COMMENTS</th>
+                <th className="viewfeed-comments-header">COMMENTS</th>
               </tr>
             </thead>
             <tbody>
@@ -126,18 +127,20 @@ const App = () => {
                           <Starating
                             answer={[calculateFileAverage(file).toFixed(2)]}
                             size={24}
-                            marginLeft={15}
+                            marginLeft={10}
                           />
                         </button>
                       }
                       position="center down"
                     >
-                      <div className="displayedcontent">
+                      <div className="viewfeed-displayedcontent">
                         {file.feedback.map((item, i) => (
                           <div className="items" key={i}>
                             <tbody>
                               <tr>
-                                <i className="question">{item.question}</i>
+                                <i className="viewfeed-question">
+                                  {item.question}
+                                </i>
                               </tr>
                               <tr style={{ textAlign: "center" }}>
                                 <Starating
